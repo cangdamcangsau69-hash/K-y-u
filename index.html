@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thư mời kỷ yếu - Za Linh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <div class="card">
+    <div class="left">
+      <img class="avatar" src="https://i.imgur.com/6VBx3io.png" alt="Za Linh">
+      <h1>Nguyễn Bảo Gia Linh</h1>
+      <p class="tagline">Mời bạn đến kỷ yếu của Za Linh 🎓</p>
+
+      <div class="details">
+        <div class="item"><strong>📅 Ngày:</strong> 22/11/2025</div>
+        <div class="item"><strong>⏰ Giờ:</strong> 11:00</div>
+        <div class="item"><strong>📍 Địa điểm:</strong> Sân trường THPT Chuyên Khoa học Xã hội và Nhân văn</div>
+      </div>
+
+      <div class="countdown">
+        <div class="cd-box">
+          <div id="days">00</div><span>Ngày</span>
+        </div>
+        <div class="cd-box">
+          <div id="hours">00</div><span>Giờ</span>
+        </div>
+        <div class="cd-box">
+          <div id="minutes">00</div><span>Phút</span>
+        </div>
+        <div class="cd-box">
+          <div id="seconds">00</div><span>Giây</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="rsvp-btn" class="btn">Xác nhận tham gia</button>
+        <button id="music-toggle" class="btn outline">Bật nhạc</button>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Gửi lời chúc</h2>
+      <form id="wish-form">
+        <input type="text" id="name" placeholder="Tên của bạn" required />
+        <textarea id="message" placeholder="Viết lời chúc (tối đa 300 ký tự)" maxlength="300" required></textarea>
+        <div class="form-row">
+          <button type="submit" class="btn">Gửi lời chúc</button>
+          <button type="button" id="clear-wishes" class="btn outline">Xóa tất cả</button>
+        </div>
+      </form>
+
+      <h3>Lời chúc đã gửi</h3>
+      <div id="wishes-list" class="wishes"></div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="bg-music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+    <!-- Nếu muốn dùng link trực tiếp, thay src bằng URL -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
